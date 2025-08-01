@@ -1,0 +1,13 @@
+version: 1
+frontend:
+  phases:
+    preBuild:
+      commands:
+        - npm install --silent
+    build:
+      commands:
+        - echo "React Native app - no web build needed"
+  artifacts:
+    baseDirectory: /
+    files:
+      - '**/*'
